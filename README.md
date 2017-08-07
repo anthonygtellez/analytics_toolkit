@@ -3,7 +3,7 @@ Splunk BA &amp; IoT Toolkit, Cool stuff we've built.
 
 
 ## Macros
-Linear Trendline
+### Linear Trendline
 
 
 ```
