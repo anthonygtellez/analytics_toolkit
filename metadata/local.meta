@@ -1,3 +1,14 @@
-[]
+[app/ui]
+version = 6.6.2
+modtime = 1502142389.771512000
+
+[app/launcher]
+version = 6.6.2
+modtime = 1502142389.826422000
+
+[macros/lineartrend%282%29]
 access = read : [ * ], write : [ admin ]
 export = system
+owner = admin
+version = 6.6.2
+modtime = 1502143027.810266000
