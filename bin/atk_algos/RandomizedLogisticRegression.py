@@ -39,7 +39,7 @@ class RandomizedLogisticRegression(ClassifierMixin, BaseAlgo):
     @staticmethod
     def register_codecs():
         from codec.codecs import SimpleObjectCodec
-        codecs_manager.add_codec('algos.RandomizedLogisticRegression', 'RandomizedLogisticRegression', SimpleObjectCodec)
+        codecs_manager.add_codec('atk_algos.RandomizedLogisticRegression', 'RandomizedLogisticRegression', SimpleObjectCodec)
         codecs_manager.add_codec('sklearn.linear_model.randomized_l1', 'RandomizedLogisticRegression', SimpleObjectCodec)
         codecs_manager.add_codec('sklearn.preprocessing.label', 'LabelEncoder', SimpleObjectCodec)
         codecs_manager.add_codec('sklearn.externals.joblib.memory', 'Memory', SimpleObjectCodec)
