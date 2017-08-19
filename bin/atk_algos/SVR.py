@@ -23,5 +23,5 @@ class SVR(RegressorMixin, BaseAlgo):
     def register_codecs():
         from codec.codecs import SimpleObjectCodec
         from codec import codecs_manager
-        codecs_manager.add_codec('algos.SVR', 'SVR', SimpleObjectCodec)
+        codecs_manager.add_codec('atk_algos.SVR', 'SVR', SimpleObjectCodec)
         codecs_manager.add_codec('sklearn.svm.classes', 'SVR', SimpleObjectCodec)

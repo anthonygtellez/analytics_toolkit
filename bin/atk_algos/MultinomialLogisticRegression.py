@@ -65,5 +65,5 @@ class MultinomialLogisticRegression(LogisticRegression):
     @staticmethod
     def register_codecs():
         from codec.codecs import SimpleObjectCodec
-        codecs_manager.add_codec('algos.MultinomialLogisticRegression', 'MultinomialLogisticRegression', SimpleObjectCodec)
+        codecs_manager.add_codec('atk_algos.MultinomialLogisticRegression', 'MultinomialLogisticRegression', SimpleObjectCodec)
         codecs_manager.add_codec('sklearn.linear_model.logistic', 'LogisticRegression', SimpleObjectCodec)
