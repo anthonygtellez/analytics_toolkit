@@ -8,3 +8,10 @@ modtime = 1502142389.826422000
 
 [algos]
 export = system
+
+[macros/forecast5w%284%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+version = 7.0.0
+modtime = 1507883842.047896000
