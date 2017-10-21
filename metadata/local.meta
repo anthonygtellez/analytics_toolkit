@@ -15,3 +15,15 @@ export = system
 owner = admin
 version = 7.0.0
 modtime = 1507883842.047896000
+
+[macros/pcr%282%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+version = 7.0.0
+modtime = 1508612193.598929000
+
+[indexes/forecast_summary]
+owner = admin
+version = 7.0.0
+modtime = 1508621376.918432000
