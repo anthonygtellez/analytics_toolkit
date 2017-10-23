@@ -20,8 +20,8 @@ modtime = 1507883842.047896000
 access = read : [ * ], write : [ admin ]
 export = system
 owner = admin
-version = 7.0.0
-modtime = 1508783116.888882000
+version = 6.6.2
+modtime = 1508789115.936903000
 
 [indexes/forecast_summary]
 owner = admin
