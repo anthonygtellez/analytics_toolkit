@@ -1,0 +1,19 @@
+# Borrowed from https://github.com/splunk/splunk-app-splunkgit
+
+# OSX noise
+.DS_Store
+
+# Compiled python files
+*.pyc
+
+# Eclipse project files
+.project
+.pydevproject
+
+# Local stuff
+
+# Git repositories folder
+git-repositories/
+
+# PyCharm/IntelliJ meta-directory
+.idea
