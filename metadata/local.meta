@@ -37,3 +37,31 @@ modtime = 1508964755.555160000
 owner = admin
 version = 7.0.0
 modtime = 1508965133.708110000
+
+[macros/lineartrend%282%29]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = nobody
+version = 7.0.1
+modtime = 1513477692.064338000
+
+[macros/error_rate%282%29]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = nobody
+version = 7.0.1
+modtime = 1513477705.880874000
+
+[macros/http_error%281%29]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = nobody
+version = 7.0.1
+modtime = 1513477719.488856000
+
+[macros/success_rate%282%29]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = nobody
+version = 7.0.1
+modtime = 1513477739.130430000
