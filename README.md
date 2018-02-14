@@ -56,48 +56,55 @@ Arguments: $1: http status_code field
 sourcetype=my_data | `http_error(status_code)`
 ```
 
+### pearsoncoorelationcoe
+Pearson correlation coefficient for single pair of fields Arguments: $1: x $2: y
+
+```
+sourcetype=my_data | `pearsoncoorelationcoe(x,y)`
+```
+
 ## Lookup Macros
 
 ### subnet_to_cidr
 Arguments: $1: subnet mask field (eg: 255.255.255.0), $2: network for subnet/vlan (eg:10.1.1.0)
 
 ```
-sourcetype=my_data `subnet_to_cidr(subnet_mask,network)`
+sourcetype=my_data | `subnet_to_cidr(subnet_mask,network)`
 ```
 
 ### port2service
 Arguments: $1: numerical list of dest_ports (eg: 22, 23, 443)
 
 ```
-sourcetype=my_data `port2service(dest_port)`
+sourcetype=my_data | `port2service(dest_port)`
 ```
 
 ### adversaries
 Arguments: $1: input of country data (eg: "United States", "Russian Federation" | "USA","RUS" | "US", "RU"), $2: type of country data in input (eg: country | iso3 | iso2 )
 
 ```
-sourcetype=my_data `adversaries(country_list,iso3)`
+sourcetype=my_data | `adversaries(country_list,iso3)`
 ```
 
 ### cdn
 Arguments: $1: parsed domain (eg:amazon.com, google.com)
 
 ```
-sourcetype=my_data `cdn(domain)`
+sourcetype=my_data | `cdn(domain)`
 ```
 
 ### ddns
 Arguments: $1: parsed domain (eg:amazon.com, google.com)
 
 ```
-sourcetype=my_data `ddns(domain)`
+sourcetype=my_data | `ddns(domain)`
 ```
 
 ### insecure_ciphers
 Arguments: $1: cipher identified by IPS/IDS (eg: TLS_ECDH_RSA_WITH_RC4_128_SHA)
 
 ```
-sourcetype=my_data `insecure_ciphers(cipher)`
+sourcetype=my_data | `insecure_ciphers(cipher)`
 ```
 
 ## Algos
