@@ -108,3 +108,18 @@ sourcetype=my_data | `insecure_ciphers(cipher)`
 ```
 
 ## Algos
+
+### Data Preparation and Feature Engineering
+
+#### PolynomialFeatures
+
+Generate polynomial features, from [scikit-learn](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html).
+Parameters:
+
+- degree : (default: 2) The degree of polynomial features to generate
+- interaction_only : (default: False) generate only features involving up to defree different input features
+- include_bias : (default: True) include a bias column of 1.
+
+```
+sourcetype=my_data | fit PolynomialFeatures a b c*
+```
