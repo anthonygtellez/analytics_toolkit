@@ -1,8 +1,11 @@
 from base import BaseAlgo
 from util.param_util import convert_params
-from sklearn.preprocessing import PolynomialFeatures as _PolynomialFeatures
+from util.df_util import prepare_features, merge_predictions
+
 from pandas import DataFrame
 import numpy as np
+
+from sklearn.preprocessing import PolynomialFeatures as _PolynomialFeatures
 
 class PolynomialFeatures(BaseAlgo):
     """Generate polynomial and interaction features"""
@@ -55,6 +58,6 @@ class PolynomialFeatures(BaseAlgo):
 
     def fit(self,df,options):
         """Compute the polynomial features and return a DataFrame"""
-        requested_columns = df[self.feature_variables]
-        output_df = DataFrame(self.preprocessor.fit_transform(requested_columns), columns = self.get_feature_names(requested_columns.columns))
-        return output_df
+        (X, nans, columns)= prepare_features(df.copy(),self.feature_variables)
+        X_hat = DataFrame(self.preprocessor.fit_transform(X), columns = self.get_feature_names(columns))
+        return merge_predictions(df,X_hat)
