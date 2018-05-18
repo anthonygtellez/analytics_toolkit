@@ -63,6 +63,18 @@ Pearson correlation coefficient for single pair of fields Arguments: $1: x $2: y
 sourcetype=my_data | `pearsoncoorelationcoe(x,y)`
 ```
 
+### relative_time
+Create relative time fields: Day of week, Hour of Day, Minute of Hour, Arguments: $1 time
+```
+sourcetype=mydata | `relative_time(time)`
+```
+
+### xT
+Parse windows 4688 process name into new features: xT_driveletter, xT_extension, xT_executiblename, etc. Arguments: $1 process
+```
+sourcetype=mydata | `xT(process)`
+```
+
 ## Lookup Macros
 
 ### subnet_to_cidr
