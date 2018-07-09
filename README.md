@@ -135,3 +135,13 @@ Parameters:
 ```
 sourcetype=my_data | fit PolynomialFeatures a b c*
 ```
+#### RandomizedLogisticRegression
+
+Test features using randomized logistic regression "Randomized Regression works by resampling the train data and computing a LogisticRegression on each resampling. In short, the features selected more often are good features. It is also known as stability selection." [scikit-learn](http://lijiancheng0614.github.io/scikit-learn/modules/generated/sklearn.linear_model.RandomizedLogisticRegression.html).
+
+
+```
+sourcetype=my_data | fit RandomizedLogisticRegression x from y z zz* into randomized_model
+
+| summary randomized_model
+```
