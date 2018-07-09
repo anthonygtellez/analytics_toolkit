@@ -33,6 +33,7 @@ Arguments: $1: inbound traffic field, $2: outbound traffic field
 ```
 sourcetype=my_data | `pcr(bytes_in,bytes_out)`
 ```
+More info: http://qosient.com/argus/presentations/Argus.FloCon.2014.PCR.Presentation.pdf
 
 ### error_rate
 Arguments: $1: count of success, $2: count of failure
