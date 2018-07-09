@@ -1,9 +1,8 @@
-# analytics_toolkit
-Toolkit for Machine Learning & Analytics Use Cases.
+# Analytics Toolkit
+A Toolkit for Machine Learning & Analytics Use Cases.
 
 ## What is it?
-This is a Splunk App which has macros, algos, lookups and searches which can be leveraged for Data Science using Splunk. The various Knowledge Objects can be used for feature engineering or combined with each other to solve various use cases in information security, business analytics, it operations, fraud, etc.
-
+This is a Splunk App which has macros, algos, lookups and searches which can be leveraged for Data Science using Splunk. The various Knowledge Objects can be used for feature engineering or combined with each other to solve various use cases in information security, business analytics, it operations, fraud, etc. The objective is to decrease the level of effort and avoid duplication of effort required to create various analytics that are common.
 
 ## Macros
 ### Linear Trendline
